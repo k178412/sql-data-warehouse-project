@@ -1,5 +1,7 @@
 /*
+----------------------------------------------------------
 Stored Procedure: Load Data Into Bronze Tables
+----------------------------------------------------------
 
 Purpose: 
 This stored procedure loads data into 'bronze' tables from external csv files.
@@ -20,17 +22,17 @@ EXEC bronze.load_bronze;
 
 create or alter procedure bronze.load_bronze as
 begin
-	declare  @start_time datetime,
-					  @end_time datetime,
-					  @batch_start_time datetime,
-					  @batch_end_time datetime;
+	declare @start_time datetime,
+		@end_time datetime,
+		@batch_start_time datetime,
+		@batch_end_time datetime;
 	begin try
 		set @batch_start_time = getdate();
 		print '========================================';
 		print '          Loading Bronze Layer';
 		print '========================================';
 
-		print '          Loading CRM Tables';     --char(10): adds a new line, char(9): adds a tab space
+		print '          Loading CRM Tables';     
 		print '----------------------------------------';
 
 		set @start_time = getdate();

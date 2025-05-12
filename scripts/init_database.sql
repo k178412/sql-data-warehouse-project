@@ -4,13 +4,13 @@ Create Database and Schemas
 ----------------------------------------------------------
 
 Purpose: 
-	This script will create a new database name 'DataWarehouse' after checking if it already exists. If it does, it will 
-  drop that first and will recreate that.
-	Further, this script will create three schemas under the same database named 'bronze', 'silver', and 'gold'.
+This script will create a new database name 'DataWarehouse' after checking if it already exists. If it does, it will 
+drop that first and will recreate that.
+Further, this script will create three schemas under the same database named 'bronze', 'silver', and 'gold'.
 
 Warning: 
-	Running this script will delete the database named 'DataWarehouse' if it exists. This will delete all the data associated 
-  with it permanently. Proceed with caution and make sure to have the backup before running this script.
+Running this script will delete the database named 'DataWarehouse' if it exists. This will delete all the data associated 
+with it permanently. Proceed with caution and make sure to have the backup before running this script.
 */
 
 use master;

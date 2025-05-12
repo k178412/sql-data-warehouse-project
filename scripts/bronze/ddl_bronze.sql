@@ -1,6 +1,11 @@
---Bronze layer: Fetching data from source
---First, we'll understand the data and create tables accordingly. 
---But before that we'll check for each table if it exists already. If it does, we'll delete that and recreate that.
+/*
+----------------------------------------------------------
+DDL Script: Create Bronze Tables
+----------------------------------------------------------
+Purpose: 
+This script creates the tables in the 'bronze' schema.
+This script checks first if the tables alreasy exists, if they do, it drops them and recreates new ones. 
+*/
 
 if object_id('bronze.crm_cust_info', 'u') is not null
 	drop table bronze.crm_cust_info;

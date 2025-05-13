@@ -1,6 +1,6 @@
 /*
 ----------------------------------------------------------
-Stored Procedure: Load Data Into Silver Tables
+Stored Procedure: Load Data Into Silver Tables (Bronze -> Silver)
 ----------------------------------------------------------
 
 Purpose: 
@@ -24,9 +24,9 @@ EXEC silver.load_silver;
 create or alter procedure silver.load_silver as
 begin
 	declare @start_time datetime,
-					@end_time datetime,
-					@batch_start_time datetime,
-					@batch_end_time datetime;
+		@end_time datetime,
+		@batch_start_time datetime,
+		@batch_end_time datetime;
 	begin try
 		set @batch_start_time = getdate();
 		print '========================================';

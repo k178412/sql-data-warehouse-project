@@ -1,3 +1,26 @@
+/*
+----------------------------------------------------------
+Stored Procedure: Load Data Into Silver Tables
+----------------------------------------------------------
+
+Purpose: 
+This stored procedure performs the ETL (Extract, Transformat, Load) process to populate 'silver' schema tables from the 
+'bronze' schema.
+It does following things:
+	Truncates 'silver' tables.
+	Inserts transformed and cleansed data into 'silver' tables.
+
+Parameters:
+None.
+This stored procedure does not take any parameter or return any value.
+
+Usage Example:
+EXEC silver.load_silver;
+
+*CHAR(10): Adds a new line.
+*CHAR(9): Adds a tab space.
+*/
+
 create or alter procedure silver.load_silver as
 begin
 	declare @start_time datetime,

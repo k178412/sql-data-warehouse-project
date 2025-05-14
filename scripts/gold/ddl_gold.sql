@@ -1,5 +1,19 @@
+/*
+----------------------------------------------------------
+DDL Script: Create Gold Views
+----------------------------------------------------------
 
+Purpose: 
+This script creates the views in the 'gold' schema.
+The 'gold' schema holds the final dimension and fact tables (Star schema) to be used later in analytics and reporting.
 
+Each view transformes and combines data from 'silver' schema to produce a clean, enriched and business-ready dataset.
+
+*/
+
+if objectid(gold.dim_customers, 'v') is not null
+	drop view gold.dim_customers;
+go
 create or alter view gold.dim_customers as
 select
 	row_number() over(order by c.cst_id) as customer_key,
@@ -19,7 +33,9 @@ left join silver.erp_cust_az12 b on c.cst_key = b.cid
 left join silver.erp_loc_a101 l on c.cst_key = l.cid;
 go
 
-
+if objectid(gold.dim_products, 'v') is not null
+	drop view gold.dim_products;
+go
 create or alter view gold.dim_products as
 select
 	row_number() over(order by p.prd_start_dt, p.prd_key) as product_key,
@@ -38,6 +54,9 @@ left join silver.erp_px_cat_g1v2 c on p.cat_id = c.id
 where p.prd_end_dt is null;
 go
 
+if objectid(gold.fact_sales, 'v') is not null
+	drop view gold.fact_sales;
+go
 create or alter view gold.fact_sales as
 select
 	sls_ord_num as order_number,

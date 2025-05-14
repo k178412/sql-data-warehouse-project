@@ -14,7 +14,18 @@ This project follows Medallion Data Architecture (Bronze, Silver, and Gold layer
 
 ---
 
+## Project Overview
+This project involves:
+
+Data Architecture: Designing a modern Data Warehouse Using Medallion Architecture Bronze, Silver, and Gold layers.
+ETL Pipelines: Extracting, transforming, and loading data from source systems into the data warehouse.
+Data Modeling: Developing fact and dimension tables optimized for analytical queries.
+Analytics & Reporting: Creating SQL-based reports and dashboards for useful insights.
+
+---
+
 ## Tools I Used
+
 1. **SQL Server**: A powerful relational database management system for storing, querying, and managing structured data.
 2. **Notion**: A flexible workspace for organizing project documentation, tracking progress, and collaborating.
 3. **Draw.io**: A diagramming tool used to visually represent data architecture, workflows, and system designs.

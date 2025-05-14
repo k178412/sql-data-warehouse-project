@@ -14,5 +14,13 @@ This project follows Medallion Data Architecture (Bronze, Silver, and Gold layer
 
 ---
 
-### Data Warehouse Project Progress (Notion Link):
-https://www.notion.so/Data-Warehouse-Project-1ee49f37ed3480e1812dc7b441fb2b11?pvs=4
+## Tools I Used
+1. **SQL Server**: A powerful relational database management system for storing, querying, and managing structured data.
+2. **Notion**: A flexible workspace for organizing project documentation, tracking progress, and collaborating.
+3. **Draw.io**: A diagramming tool used to visually represent data architecture, workflows, and system designs.
+4. **Git**: A platform for storing, managing, and tracking code changes using Git.
+
+---
+
+## Data Warehouse Project Progress (Notion Link):
+https://glimmer-ricotta-2b2.notion.site/Data-Warehouse-Project-1ee49f37ed3480e1812dc7b441fb2b11?pvs=4

@@ -1,7 +1,6 @@
 # Data Warehouse Project Documentation
 
 ## Overview
-
 This project builds a SQL-based Data Warehouse, structured using Medallion Architecture (Bronze, Silver, and Gold layers). 
 It integrates CRM and ERP datasets, processes data using ETL pipelines, and prepares business-ready views for analytics and 
 reporting.
@@ -9,11 +8,11 @@ reporting.
 ---
 
 ## Data Architecture
-
 This data warehouse follows a layered architecture for efficient data management and structured processing.
+
 1. Bronze Layer (Raw Data Storage)
-   Stores raw data directly from the source (CSV files from CRM and ERP systems).
-   No transformations or filtering. Data is ingested as-is.
+- Stores raw data directly from the source (CSV files from CRM and ERP systems).
+- No transformations or filtering. Data is ingested as-is.
 3. Silver Layer (Transformed Data)
       Cleans, standardizes, and normalizes data for accuracy.
       Handles missing values, duplicates, derived attributes, and format corrections.

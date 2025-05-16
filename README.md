@@ -14,7 +14,7 @@ This project follows the Medallion Data Architecture (Bronze, Silver, and Gold l
 
 ---
 
-## Project Overview
+## 🔍 Project Overview
 This project involves:
 
 1. **Data Architecture**: Designing a structured data warehouse using Medallion Architecture.
@@ -24,7 +24,7 @@ This project involves:
 
 ---
 
-## Project Files
+## 📂 Project Files
 
 1. **Datasets/**: Source CRM and ERP data stored as CSV files, used for ingestion into the warehouse.
 2. **Docs/**: Draw.io diagrams illustrating data architecture, data flow, integration, data model, and ETL pipeline.
@@ -32,7 +32,7 @@ This project involves:
 
 ---
 
-## Diagrams
+## 📊 Diagrams
 
 1. **Data Architecture**: Defines the structural flow of the data warehouse.
 2. **Data Flow**: Defines how data moves through different layers.
@@ -42,7 +42,7 @@ This project involves:
 
 ---
 
-## Tools Stack
+## 🛠️ Tools Stack
 
 1. **SQL Server**: Stores and processes structured data.
 2. **Notion**: Tracks project progress and documentation.
@@ -51,11 +51,11 @@ This project involves:
 
 ---
 
-## Project Tracking
+## 📌 Project Tracking
 **Notion Project Link**: [Data Warehouse Project](https://glimmer-ricotta-2b2.notion.site/Data-Warehouse-Project-1ee49f37ed3480e1812dc7b441fb2b11?pvs=4)
 
 ---
 
-## License
+## 🔒 License
 This project is licensed under MIT License.
 

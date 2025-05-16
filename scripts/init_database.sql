@@ -1,16 +1,14 @@
 /*
-----------------------------------------------------------
-Create Database and Schemas
-----------------------------------------------------------
+Script: init_database.sql
 
-Purpose: 
-This script will create a new database name 'DataWarehouse' after checking if it already exists. If it does, it will 
-drop that first and will recreate that.
-Further, this script will create three schemas under the same database named 'bronze', 'silver', and 'gold'.
+Purpose:
+This script initializes the DataWarehouse database. 
+It first checks if an existing database named DataWarehouse is present, deletes it if necessary, and then creates a new database. 
+After that, it establishes three schemas: bronze, silver, and gold, which can be used for data processing stages.
 
-Warning: 
-Running this script will delete the database named 'DataWarehouse' if it exists. This will delete all the data associated 
-with it permanently. Proceed with caution and make sure to have the backup before running this script.
+Warnings:
+Dropping the database removes all data permanently.
+Ensure backup is taken before running this script.
 */
 
 use master;

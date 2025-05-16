@@ -19,7 +19,7 @@ Execution & Error Handling:
 This procedure ensures clean and structured data for the silver layer, supporting analytical processes.
 
 Usage Example:
-EXEC silver.load_silver;
+	EXEC silver.load_silver;
 
 *CHAR(10): Adds a new line.
 *CHAR(9): Adds a tab space.

@@ -1,20 +1,24 @@
 /*
-----------------------------------------------------------
-Stored Procedure: Load Data Into Bronze Tables
-----------------------------------------------------------
+Script: load_bronze.sql
 
-Purpose: 
-This stored procedure loads data into 'bronze' tables from external csv files.
-It does following things:
-  It truncates the tables first.
-  Then uses Bulk Insert to load the data into tables.
+Purpose:
+This stored procedure automates the data loading process into the bronze tables from external CSV files. 
+It follows a systematic approach to ensure a clean and efficient load.
 
-Parameters:
-None.
-This stored procedure does not take any parameter or return any value.
+Process Overview:
+	Clears existing data by truncating tables.
+	Bulk inserts data from structured CSV sources.
+	Logs execution details, including processing time and error handling.
+
+Execution & Error Handling:
+	Captures start and end timestamps for performance tracking.
+	Provides status messages throughout execution.
+	Implements error handling to log failures efficiently.
+
+This procedure ensures a reliable data ingestion process within the bronze layer.
 
 Usage Example:
-EXEC bronze.load_bronze;
+	EXEC bronze.load_bronze;
 
 *CHAR(10): Adds a new line.
 *CHAR(9): Adds a tab space.

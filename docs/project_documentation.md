@@ -8,15 +8,15 @@ reporting.
 ## Data Architecture
 This data warehouse follows a layered architecture for efficient data management and structured processing.
 1. Bronze Layer – Raw Data Storage
-🔹 Stores raw data directly from the source (CSV files from CRM and ERP systems).
-🔹 No transformations or filtering. Data is ingested as-is.
+      Stores raw data directly from the source (CSV files from CRM and ERP systems).
+      No transformations or filtering. Data is ingested as-is.
 2. Silver Layer – Processed Data Storage
-🔹 Cleans, standardizes, and normalizes data for accuracy.
-🔹 Handles missing values, duplicates, derived attributes, and format corrections.
-🔹 Uses truncate & insert strategy to refresh data.
+      Cleans, standardizes, and normalizes data for accuracy.
+      Handles missing values, duplicates, derived attributes, and format corrections.
+      Uses truncate & insert strategy to refresh data.
 3. Gold Layer – Business-Ready Data
-🔹 Creates structured views optimized for reporting, analytics, and queries.
-🔹 Implements Star Schema (Fact & Dimension tables) for efficient analysis.
+      Creates structured views optimized for reporting, analytics, and queries.
+      Implements Star Schema (Fact & Dimension tables) for efficient analysis.
 
 ## ETL Process (Extract, Transform, Load)
 The ETL process moves data across layers while cleaning and structuring it.

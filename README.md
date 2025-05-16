@@ -24,6 +24,24 @@ This project involves:
 
 ---
 
+## Project Files
+
+1. Datasets/: Source CRM and ERP data stored as CSV files, used for ingestion into the warehouse.
+2. Docs/: Draw.io diagrams illustrating data architecture, data flow, integration, data model, and ETL pipeline.
+3. Scripts/: SQL scripts for database setup, table creation, ETL processes, and transformations.
+
+---
+
+## Diagrams
+
+1. Data Architecture: Defines the structural flow of the data warehouse.
+2. Data Flow: Defines how data moves through different layers.
+3. Data Integration: Shows relationships between different sources.
+4. Data Model: Represents logical schema for structured storage.
+5. ETL Pipeline: Outlines the extraction, transformation, and loading process
+
+---
+
 ## Tools Stack
 
 1. **SQL Server**: Stores and processes structured data.

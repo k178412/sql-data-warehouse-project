@@ -20,7 +20,6 @@ This project involves:
 1. **Data Architecture**: Designing a structured data warehouse using Medallion Architecture.
 2. **ETL Pipelines**: Extracting, transforming, and loading data efficiently.
 3. **Data Modeling**: Developing fact and dimension tables for optimized analytics.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for useful insights.
 
 ---
 

@@ -20,8 +20,8 @@ This procedure ensures a reliable data ingestion process within the bronze layer
 Usage Example:
 	EXEC bronze.load_bronze;
 
-*CHAR(10): Adds a new line.
-*CHAR(9): Adds a tab space.
+CHAR(10): Adds a new line.
+CHAR(9): Adds a tab space.
 */
 
 create or alter procedure bronze.load_bronze as

@@ -4,7 +4,7 @@ Script: init_database.sql
 Purpose:
 This script initializes the DataWarehouse database. 
 It first checks if an existing database named DataWarehouse is present, deletes it if necessary, and then creates a new database. 
-After that, it establishes three schemas: bronze, silver, and gold, which can be used for data processing stages.
+After that, it creates three new schemas: bronze, silver, and gold.
 
 Warnings:
 Dropping the database removes all data permanently.

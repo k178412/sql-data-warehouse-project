@@ -36,9 +36,10 @@ Key components include:
 
 1. [**Data Architecture**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20architecture.png) - Defines the structural flow of the data warehouse.
 2. [**Data Flow**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20flow.png) - Illustrates the journey from raw to refined data.
-3. [**Data Integration**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20integration.png) - Highlights how different source systems connect.
-4. [**Data Model**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20model.png) - Represents logical schema for fact and dimension tables.
-5. [**ETL Pipeline**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/etl.png) - Shows different extraction, transformation, and loading processes.
+   ![](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20flow.png)
+4. [**Data Integration**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20integration.png) - Highlights how different source systems connect.
+5. [**Data Model**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20model.png) - Represents logical schema for fact and dimension tables.
+6. [**ETL Pipeline**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/etl.png) - Shows different extraction, transformation, and loading processes.
 
 ---
 

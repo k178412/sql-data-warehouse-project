@@ -6,7 +6,7 @@ A hands-on data warehouse project using SQL Server, covering ETL processes, and 
 ## 🏗️ Data Architecture
 This project follows the Medallion Data Architecture, breaking the data pipeline into three layers (Bronze, Silver, and Gold layers) to ensure clarity, maintainability, and scalability.
 
-![data architecture](https://github.com/user-attachments/assets/184a426c-2f6e-46c3-a5d7-5de0cf1f2fa6)
+![data architecture](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20architecture.png)
 
 1. **Bronze Layer** - Stores raw data exactly as received from source systems.
 2. **Silver Layer** - Cleans and transforms data for consistency, applying standardization and normalization.

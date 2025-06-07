@@ -2,27 +2,23 @@
 Script: load_silver.sql
 
 Purpose:
-This stored procedure moves data from the bronze schema to the silver schema, applying transformation and cleaning 
-steps along the way.
+This stored procedure moves data from the Bronze layer to the Silver layer as part of the ETL pipeline.
+It applies necessary data cleaning and transformation steps to prepare structured data.
 
-Process Overview:
-	Truncates silver tables before loading new data.
-	Transforms and cleanses records to ensure consistency.
-	Handles missing values, formatting inconsistencies, and category mapping.
-	Logs execution time and tracks errors for monitoring.
+What it does:
+- Truncates Silver tables before loading fresh data.
+- Cleans and standardizes records to ensure data quality.
+- Handles missing values, fixes formatting issues, and maps categories.
+- Logs execution time and tracks any errors that occur.
 
-Execution & Error Handling:
-	Captures start and end timestamps for performance tracking.
-	Uses structured messages to indicate progress.
-	Implements error handling to log failures efficiently.
+This procedure ensures that the Silver layer contains clean, consistent, and analysis-ready data.
 
-This procedure ensures clean and structured data for the silver layer, supporting analytical processes.
+How to run:
+  EXEC silver.load_silver;
 
-Usage Example:
-	EXEC silver.load_silver;
-
-*CHAR(10): Adds a new line.
-*CHAR(9): Adds a tab space.
+Note:
+CHAR(10) – New line  
+CHAR(9) – Tab space
 */
 
 create or alter procedure silver.load_silver as

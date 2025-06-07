@@ -2,16 +2,15 @@
 Script: ddl_gold.sql
 
 Purpose:
-This script defines views in the gold schema, which holds final dimension and fact tables following the 
-Star Schema approach. 
-These views transform and combine data from the silver schema into structured datasets ready for analytics and reporting.
+This script creates views in the Gold layer, representing the final data models used for reporting and analytics.
+It follows the Star Schema approach to organize data into fact and dimension tables.
 
-Key Features:
-	Builds clean, structured, business-ready datasets for reporting.
-	Establishes dimension tables (dim_customers, dim_products) for analysis.
-	Creates a fact table (fact_sales) with transactional details.
+What it does:
+- Builds clean, business-ready views from the Silver layer.
+- Defines dimension tables like dim_customers and dim_products for descriptive attributes.
+- Creates a fact_sales table containing transactional metrics for analysis.
 
-This prepares the gold layer for streamlined querying and analytics.
+This script prepares the Gold layer for fast, structured querying and use in BI tools or dashboards.
 */
 
 if objectid(gold.dim_customers, 'v') is not null

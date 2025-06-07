@@ -1,56 +1,60 @@
 # SQL Data Warehouse Project
-Building a data warehouse with SQL Server, covering ETL processes, data modeling, and analytics.
+A hands-on data warehouse project using SQL Server, covering ETL processes, and data modeling.
 
 ---
 
 ## 🏗️ Data Architecture
-This project follows the Medallion Data Architecture (Bronze, Silver, and Gold layers).
+This project follows the Medallion Data Architecture, breaking the data pipeline into three layers (Bronze, Silver, and Gold layers) to ensure clarity, maintainability, and scalability.
 
 ![data architecture](https://github.com/user-attachments/assets/184a426c-2f6e-46c3-a5d7-5de0cf1f2fa6)
 
-1. **Bronze Layer**: Stores raw data exactly as received from source systems.
-2. **Silver Layer**: Cleans and transforms data for consistency, applying standardization and normalization.
-3. **Gold Layer**: Contains business-ready data, optimized for reporting and analytics.
+1. **Bronze Layer** - Stores raw data exactly as received from source systems.
+2. **Silver Layer** - Cleans and transforms data for consistency, applying standardization and normalization.
+3. **Gold Layer** - Contains business-ready data, optimized for reporting and insights.
 
 ---
 
 ## 🔍 Project Overview
-This project involves:
+This project shows the full data warehouse lifecycle, from source data ingestion to business-ready data models.  
+Key components include:
 
-1. **Data Architecture**: Designing a structured data warehouse using Medallion Architecture.
-2. **ETL Pipelines**: Extracting, transforming, and loading data efficiently.
-3. **Data Modeling**: Developing fact and dimension tables for optimized analytics.
+1. 🧱 **Data Architecture** - Designing a structured data warehouse using Medallion Architecture.
+2. 🔄 **ETL Pipelines** - Extracting, transforming, and loading data using SQL scripts.
+3. 🧮 **Data Modeling** - Creating fact and dimension tables for optimized querying and analytics.
 
 ---
 
 ## 📂 Project Files
 
-1. **Datasets/**: Source CRM and ERP data stored as CSV files, used for ingestion into the warehouse.
-2. **Docs/**: Draw.io diagrams illustrating data architecture, data flow, integration, data model, and ETL pipeline.
-3. **Scripts/**: SQL scripts for database setup, table creation, ETL processes, and transformations.
+1. [**Datasets/**](https://github.com/k178412/sql-data-warehouse-project/tree/main/datasets) - Source CRM and ERP data stored as CSV files, used for ingestion into the warehouse.
+2. [**Docs/**](https://github.com/k178412/sql-data-warehouse-project/tree/main/docs) - Diagrams (created in Draw.io) for architecture, data flow, and data modeling.
+3. [**Scripts/**](https://github.com/k178412/sql-data-warehouse-project/tree/main/scripts) - SQL scripts for database setup, table creation, ETL processes, and transformations.
 
 ---
 
 ## 📊 Diagrams
 
-1. **Data Architecture**: Defines the structural flow of the data warehouse.
-2. **Data Flow**: Defines how data moves through different layers.
-3. **Data Integration**: Shows relationships between different sources.
-4. **Data Model**: Represents logical schema for structured storage.
-5. **ETL Pipeline**: Outlines the extraction, transformation, and loading process
+1. [**Data Architecture**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20architecture.png) - Defines the structural flow of the data warehouse.
+2. [**Data Flow**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20flow.png) - Illustrates the journey from raw to refined data.
+3. [**Data Integration**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20integration.png) - Highlights how different source systems connect.
+4. [**Data Model**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/data%20model.png) - Represents logical schema for fact and dimension tables.
+5. [**ETL Pipeline**](https://github.com/k178412/sql-data-warehouse-project/blob/main/docs/etl.png) - Shows different extraction, transformation, and loading processes.
 
 ---
 
-## 🛠️ Tools Stack
+## 🛠️ Tools & Technologies
 
-1. **SQL Server**: Stores and processes structured data.
-2. **Notion**: Tracks project progress and documentation.
-3. **Draw.io**: Visualizes architecture, workflows, and system design.
-4. **Git**: Manages version control and repository tracking.
+1. **SQL Server** - Core database platform for data storage and transformation.
+2. **Notion** - For planning and tracking project progress.
+3. **Draw.io** - Used to design diagrams and workflows.
+4. **Git** - To manage version control and repository tracking.
 
 ---
 
 ## 📌 Project Tracking
+
+You can view the detailed plan, and progress here:
+
 **Notion Project Link**: [Data Warehouse Project](https://glimmer-ricotta-2b2.notion.site/Data-Warehouse-Project-1ee49f37ed3480e1812dc7b441fb2b11?pvs=4)
 
 ---

@@ -2,26 +2,23 @@
 Script: load_bronze.sql
 
 Purpose:
-This stored procedure automates the data loading process into the bronze tables from external CSV files. 
-It follows a systematic approach to ensure a clean and efficient load.
+This stored procedure is used to load raw data into the Bronze layer from external CSV files.
+It helps automate the initial data ingestion step in the ETL process.
 
-Process Overview:
-	Clears existing data by truncating tables.
-	Bulk inserts data from structured CSV sources.
-	Logs execution details, including processing time and error handling.
+What it does:
+- Clears existing data by truncating the Bronze tables.
+- Uses BULK INSERT to load fresh data from CRM and ERP CSV files.
+- Tracks the execution time and logs status messages.
+- Includes basic error handling to catch and log any issues.
 
-Execution & Error Handling:
-	Captures start and end timestamps for performance tracking.
-	Provides status messages throughout execution.
-	Implements error handling to log failures efficiently.
+This procedure ensures a clean and consistent load every time it's run.
 
-This procedure ensures a reliable data ingestion process within the bronze layer.
+How to run:
+  EXEC bronze.load_bronze;
 
-Usage Example:
-	EXEC bronze.load_bronze;
-
-CHAR(10): Adds a new line.
-CHAR(9): Adds a tab space.
+Note:
+CHAR(10) - Adds a new line.
+CHAR(9) - Adds a tab space.
 */
 
 create or alter procedure bronze.load_bronze as
